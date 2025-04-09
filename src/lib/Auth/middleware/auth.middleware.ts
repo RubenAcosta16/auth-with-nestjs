@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import * as jwt from 'jsonwebtoken';
 import { AuthInvalidCredentialsError } from '../domain/errors';
-import { SECRET_JWT_KEY } from '../../shared/config';
+import { SECRET_JWT_KEY } from '../../shared/infraestructure/config';
 import { User } from 'src/lib/User/domain/User';
 import {
   BadRequestException,

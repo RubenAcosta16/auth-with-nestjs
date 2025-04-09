@@ -1,6 +1,6 @@
 import * as bcrypt from 'bcryptjs';
 import * as jwt from 'jsonwebtoken';
-import { EXPIRES_JWT, SALTROUNDS, SECRET_JWT_KEY } from 'src/lib/shared/config';
+import { EXPIRES_JWT, SALTROUNDS, SECRET_JWT_KEY } from 'src/lib/shared/infraestructure/config';
 import { User } from 'src/lib/User/domain/User';
 import { AuthRepository } from '../domain/AuthRepository';
 import { v4 as uuidv4 } from 'uuid';
