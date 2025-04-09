@@ -11,6 +11,8 @@ async function bootstrap() {
   // Aplicar el filtro global
   app.useGlobalFilters(new CustomExceptionsFilter());
 
+  // app.enableCors({origin: 'urlfrontendexample.com', credentials: true});
+
   await app.listen(3000);
 }
 bootstrap();
